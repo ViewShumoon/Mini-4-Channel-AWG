@@ -1,0 +1,25 @@
+//
+//Written by GowinSynthesis
+//Tool Version "V1.9.12.03 (64-bit)"
+//Wed Sep  2 13:08:29 2026
+
+//Source file index table:
+//file0 "\D:/Source/git/Mini-4-Channel-AWG/build/blinky.v"
+`timescale 100 ps/100 ps
+module blinky (
+  clk27_0__io
+)
+;
+input clk27_0__io;
+wire VCC;
+wire GND;
+  VCC VCC_cZ (
+    .V(VCC)
+);
+  GND GND_cZ (
+    .G(GND)
+);
+  GSR GSR (
+    .GSRI(VCC) 
+);
+endmodule /* blinky */
