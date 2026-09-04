@@ -1,0 +1,239 @@
+Info: Using uarch 'gowin' for device 'GW1NR-LV9QN88PC6/I5'
+
+Info: Cell O_psram_ck[0] not found
+Info: Cell O_psram_ck[1] not found
+Info: Cell O_psram_ck_n[0] not found
+Info: Cell O_psram_ck_n[1] not found
+Info: Cell O_psram_cs_n[0] not found
+Info: Cell O_psram_cs_n[1] not found
+Info: Cell O_psram_reset_n[0] not found
+Info: Cell O_psram_reset_n[1] not found
+Info: Cell IO_psram_dq[0] not found
+Info: Cell IO_psram_dq[1] not found
+Info: Cell IO_psram_dq[2] not found
+Info: Cell IO_psram_dq[3] not found
+Info: Cell IO_psram_dq[4] not found
+Info: Cell IO_psram_dq[5] not found
+Info: Cell IO_psram_dq[6] not found
+Info: Cell IO_psram_dq[7] not found
+Info: Cell IO_psram_dq[8] not found
+Info: Cell IO_psram_dq[9] not found
+Info: Cell IO_psram_dq[10] not found
+Info: Cell IO_psram_dq[11] not found
+Info: Cell IO_psram_dq[12] not found
+Info: Cell IO_psram_dq[13] not found
+Info: Cell IO_psram_dq[14] not found
+Info: Cell IO_psram_dq[15] not found
+Info: Cell IO_psram_rwds[0] not found
+Info: Cell IO_psram_rwds[1] not found
+Info: Reading constraints...
+Info: Create constant nets...
+Info: Modify LUTs...
+Info: Pack IOBs...
+Info: Pack I3C IOs...
+Info: Pack MIPI IOs...
+Info: Pack diff IOBs...
+Info: Pack FFs into IO cells...
+Info: Pack IODELAY...
+Info: Pack Input Edge Monitors...
+Info: Pack IO logic...
+Info: Pack DESER16 logic...
+Info: Pack GSR...
+Info: Pack HCLK cells...
+Info: Pack DLLDLYs...
+Info: Pack wide LUTs...
+Info: Packed MUX2_LUT8:1, MUX2_LU7:1, MUX2_LUT6:2, MUX2_LUT5:0
+Info: Pack ALUs...
+Info: Pack SSRAMs...
+Info: Constrained 2 LUTFF pairs.
+Info: Pack PLL...
+Info: Pack ADC...
+Info: Pack BSRAMs...
+Info: Pack DSP...
+Info: Pack INV...
+Info: Pack buffered nets...
+Info: Pack EMCU and UserFlash cells...
+Info: Pack UserFlash cells...
+Info: Pack DQCE cells...
+Info: Pack DCS cells...
+Info: Checksum: 0xef584a14
+
+Info: Device utilisation:
+Info: 	                 VCC:       1/      1   100%
+Info: 	                 IOB:       1/    276     0%
+Info: 	                LUT4:      73/   8640     0%
+Info: 	              OSER16:       0/     80     0%
+Info: 	              IDES16:       0/     80     0%
+Info: 	            IOLOGICI:       0/    276     0%
+Info: 	            IOLOGICO:       0/    276     0%
+Info: 	           MUX2_LUT5:      16/   4320     0%
+Info: 	           MUX2_LUT6:       8/   2160     0%
+Info: 	           MUX2_LUT7:       3/   1080     0%
+Info: 	           MUX2_LUT8:       1/   1080     0%
+Info: 	                 ALU:      26/   6480     0%
+Info: 	                 GND:       1/      1   100%
+Info: 	                 DFF:      34/   6480     0%
+Info: 	           RAM16SDP4:       0/    270     0%
+Info: 	               BSRAM:       0/     26     0%
+Info: 	              ALU54D:       0/     10     0%
+Info: 	     MULTADDALU18X18:       0/     10     0%
+Info: 	        MULTALU18X18:       0/     10     0%
+Info: 	        MULTALU36X18:       0/     10     0%
+Info: 	           MULT36X36:       0/      5     0%
+Info: 	           MULT18X18:       0/     20     0%
+Info: 	             MULT9X9:       0/     40     0%
+Info: 	              PADD18:       0/     20     0%
+Info: 	               PADD9:       0/     40     0%
+Info: 	                 GSR:       1/      1   100%
+Info: 	                 OSC:       0/      1     0%
+Info: 	                rPLL:       0/      2     0%
+Info: 	           FLASH608K:       0/      1     0%
+Info: 	                BUFG:       0/     22     0%
+Info: 	                DQCE:       0/     24     0%
+Info: 	                 DCS:       0/      8     0%
+Info: 	               DHCEN:       0/     24     0%
+Info: 	              CLKDIV:       0/      8     0%
+Info: 	             CLKDIV2:       0/     16     0%
+Info: 	           MIPI_IBUF:       0/     22     0%
+Info: 	           MIPI_OBUF:       0/     20     0%
+
+Info: Running custom HCLK placer...
+Info: Placed 0 cells based on constraints.
+Info: Creating initial analytic placement for 52 cells, random placement wirelen = 2710.
+Info:     at initial placer iter 0, wirelen = 180
+Info:     at initial placer iter 1, wirelen = 198
+Info:     at initial placer iter 2, wirelen = 192
+Info:     at initial placer iter 3, wirelen = 192
+Info: Running main analytical placer, max placement attempts per cell = 10000.
+Info:     at iteration #1, type ALL: wirelen solved = 192, spread = 289, legal = 314; time = 0.00s
+Info:     at iteration #2, type ALL: wirelen solved = 156, spread = 287, legal = 320; time = 0.00s
+Info:     at iteration #3, type ALL: wirelen solved = 154, spread = 328, legal = 333; time = 0.00s
+Info:     at iteration #4, type ALL: wirelen solved = 157, spread = 272, legal = 324; time = 0.00s
+Info:     at iteration #5, type ALL: wirelen solved = 155, spread = 302, legal = 342; time = 0.00s
+Info:     at iteration #6, type ALL: wirelen solved = 159, spread = 255, legal = 325; time = 0.00s
+Info: HeAP Placer Time: 0.04s
+Info:   of which solving equations: 0.01s
+Info:   of which spreading cells: 0.00s
+Info:   of which strict legalisation: 0.00s
+
+Info: Running simulated annealing placer for refinement.
+Info:   at iteration #1: temp = 0.000000, timing cost = 11, wirelen = 314
+Info:   at iteration #5: temp = 0.000000, timing cost = 8, wirelen = 280
+Info:   at iteration #5: temp = 0.000000, timing cost = 7, wirelen = 281 
+Info: SA placement time 0.01s
+
+Info: Max frequency for clock 'clk': 179.69 MHz (PASS at 12.00 MHz)
+
+Info: Slack histogram:
+Info:  legend: * represents 1 endpoint(s)
+Info:          + represents [1,1) endpoint(s)
+Info: [ 77768,  78022) |********* 
+Info: [ 78022,  78276) |************* 
+Info: [ 78276,  78530) |* 
+Info: [ 78530,  78784) |********* 
+Info: [ 78784,  79038) |*** 
+Info: [ 79038,  79292) |*** 
+Info: [ 79292,  79546) |****** 
+Info: [ 79546,  79800) |** 
+Info: [ 79800,  80054) |** 
+Info: [ 80054,  80308) |** 
+Info: [ 80308,  80562) | 
+Info: [ 80562,  80816) | 
+Info: [ 80816,  81070) | 
+Info: [ 81070,  81324) | 
+Info: [ 81324,  81578) | 
+Info: [ 81578,  81832) |* 
+Info: [ 81832,  82086) |* 
+Info: [ 82086,  82340) |*** 
+Info: [ 82340,  82594) |*** 
+Info: [ 82594,  82848) |*********** 
+Info: Checksum: 0x17f83d62
+Info: Routing globals...
+Info:     'clk' net was routed using global resources only.
+
+Info: Routing..
+Info: Setting up routing queue.
+Info: Routing 313 arcs.
+Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
+Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
+Info:        320 |        6        233 |    6   233 |         0|       0.04       0.04|
+Info: Routing complete.
+Info: Router1 time 0.04s
+Info: Checksum: 0xfbc600d4
+
+Info: Critical path report for clock 'clk' (posedge -> posedge):
+Info:       type curr  total name
+Info:   clk-to-q  0.46  0.46 Source timer_DFFS_Q_9.Q
+Info:    routing  0.41  0.87 Net timer[12] (3,17) -> (2,17)
+Info:                          Sink do_shift_DFFR_Q_D_MUX2_LUT6_O_S0_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT4_F.I1
+Info:                          Defined in:
+Info:                               D:\Source\git\Mini-4-Channel-AWG\src\awg\blinky.py:38
+Info:      logic  1.10  1.97 Source do_shift_DFFR_Q_D_MUX2_LUT6_O_S0_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT4_F.F
+Info:    routing  0.00  1.97 Net do_shift_DFFR_Q_D_MUX2_LUT6_O_S0_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0 (2,17) -> (2,17)
+Info:                          Sink do_shift_DFFR_Q_D_MUX2_LUT6_O_S0_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O.I0
+Info:                          Defined in:
+Info:                               D:\Applications\oss-cad-suite\bin\../share/yosys/gowin/cells_map.v:170.42-170.67
+Info:                               D:\Applications\oss-cad-suite\bin\../share/yosys/gowin/cells_map.v:164.41-164.66
+Info:                               D:\Applications\oss-cad-suite\bin\../share/yosys/gowin/cells_map.v:158.41-158.66
+Info:                               D:\Applications\oss-cad-suite\bin\../share/yosys/gowin/cells_map.v:151.9-151.11
+Info:      logic  0.47  2.44 Source do_shift_DFFR_Q_D_MUX2_LUT6_O_S0_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O.O
+Info:    routing  0.00  2.44 Net do_shift_DFFR_Q_D_MUX2_LUT6_O_S0_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0 (2,17) -> (2,17)
+Info:                          Sink do_shift_DFFR_Q_D_MUX2_LUT6_O_S0_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O.I0
+Info:                          Defined in:
+Info:                               D:\Applications\oss-cad-suite\bin\../share/yosys/gowin/cells_map.v:170.42-170.67
+Info:                               D:\Applications\oss-cad-suite\bin\../share/yosys/gowin/cells_map.v:164.41-164.66
+Info:                               D:\Applications\oss-cad-suite\bin\../share/yosys/gowin/cells_map.v:157.9-157.11
+Info:      logic  0.47  2.91 Source do_shift_DFFR_Q_D_MUX2_LUT6_O_S0_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O.O
+Info:    routing  0.00  2.91 Net do_shift_DFFR_Q_D_MUX2_LUT6_O_S0_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0 (2,17) -> (2,17)
+Info:                          Sink do_shift_DFFR_Q_D_MUX2_LUT6_O_S0_MUX2_LUT8_O_I0_MUX2_LUT7_O.I0
+Info:                          Defined in:
+Info:                               D:\Applications\oss-cad-suite\bin\../share/yosys/gowin/cells_map.v:170.42-170.67
+Info:                               D:\Applications\oss-cad-suite\bin\../share/yosys/gowin/cells_map.v:163.9-163.11
+Info:      logic  0.47  3.38 Source do_shift_DFFR_Q_D_MUX2_LUT6_O_S0_MUX2_LUT8_O_I0_MUX2_LUT7_O.O
+Info:    routing  0.00  3.38 Net do_shift_DFFR_Q_D_MUX2_LUT6_O_S0_MUX2_LUT8_O_I0 (2,17) -> (1,17)
+Info:                          Sink do_shift_DFFR_Q_D_MUX2_LUT6_O_S0_MUX2_LUT8_O.I0
+Info:                          Defined in:
+Info:                               D:\Applications\oss-cad-suite\bin\../share/yosys/gowin/cells_map.v:169.9-169.11
+Info:      logic  0.47  3.86 Source do_shift_DFFR_Q_D_MUX2_LUT6_O_S0_MUX2_LUT8_O.O
+Info:    routing  1.70  5.55 Net do_shift_DFFR_Q_D_MUX2_LUT6_O_S0[4] (1,17) -> (4,19)
+Info:                          Sink cd_sync.reset_sync.stage1_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_I1_MUX2_LUT6_O.S0
+Info:                          Defined in:
+Info:                               D:\Applications\oss-cad-suite\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:      logic  0.18  5.73 Source cd_sync.reset_sync.stage1_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_I1_MUX2_LUT6_O.O
+Info:    routing  0.00  5.73 Net cd_sync.reset_sync.stage1_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_I1 (4,19) -> (4,19)
+Info:                          Sink cd_sync.reset_sync.stage1_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0.I1
+Info:                          Defined in:
+Info:                               D:\Applications\oss-cad-suite\bin\../share/yosys/gowin/cells_map.v:163.13-163.15
+Info:      logic  0.50  6.23 Source cd_sync.reset_sync.stage1_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0.O
+Info:    routing  1.70  7.93 Net cd_sync.reset_sync.stage1_LUT1_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O (4,19) -> (3,16)
+Info:                          Sink timer_DFFS_Q_5.SET
+Info:      setup  0.04  7.97 Source timer_DFFS_Q_5.SET
+Info: 4.16 ns logic, 3.80 ns routing
+
+Info: Max frequency for clock 'clk': 125.49 MHz (PASS at 12.00 MHz)
+
+Info: Slack histogram:
+Info:  legend: * represents 1 endpoint(s)
+Info:          + represents [1,1) endpoint(s)
+Info: [ 75364,  75698) |**** 
+Info: [ 75698,  76032) |*********** 
+Info: [ 76032,  76366) |********** 
+Info: [ 76366,  76700) | 
+Info: [ 76700,  77034) | 
+Info: [ 77034,  77368) | 
+Info: [ 77368,  77702) | 
+Info: [ 77702,  78036) | 
+Info: [ 78036,  78370) | 
+Info: [ 78370,  78704) |*** 
+Info: [ 78704,  79038) |* 
+Info: [ 79038,  79372) |** 
+Info: [ 79372,  79706) | 
+Info: [ 79706,  80040) | 
+Info: [ 80040,  80374) | 
+Info: [ 80374,  80708) |* 
+Info: [ 80708,  81042) | 
+Info: [ 81042,  81376) | 
+Info: [ 81376,  81710) |** 
+Info: [ 81710,  82044) |********** 
+
+Info: Program finished normally.
