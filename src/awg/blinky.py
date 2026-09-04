@@ -23,7 +23,7 @@ class Blinky(Elaboratable):
     从 LED0 向 LED5 循环移动, 目测即可确认 bitstream 工作正常。
     """
 
-    def __init__(self, clock_freq=27e6, step_hz=1.0):
+    def __init__(self, clock_freq=27e6, step_hz=4.0):
         # 设计参数
         self.clock_freq = clock_freq  # Hz
         self.step_hz = step_hz        # 亮点每秒移动的 LED 数

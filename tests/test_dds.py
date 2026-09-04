@@ -9,7 +9,7 @@ def test_build():
     
     # 测试 12-bit 数据通路
     print("Building with 12-bit data path...")
-    platform = TangNano9kPlatform(toolchain="Gowin")
+    platform = TangNano9kPlatform()
     top_12bit = DdsTop(lut_depth_bits=12, data_width=12)
     platform.build(top_12bit, name="dds_top_12bit", do_program=False)
     print("12-bit build success!")

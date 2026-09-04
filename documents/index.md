@@ -14,10 +14,10 @@
 - oss-cad-suite: D:\Applications\oss-cad-suite
 
 
+## Command 
 
+- Build
+python build_and_program.py
+
+- Programmer
 D:\Applications\Gowin\Gowin_V1.9.12.03_x64\Programmer\bin\programmer_cli.exe -d GW1NR-9C --run 2 --fsFile "d:\Source\git\Mini-4-Channel-AWG\build\blinky.fs"
-
-注:
-- `--run 2` = SRAM Program (Programmer V1.9.12.03; 旧版文档中的 `--run 6` 编号已废弃)
-- apicula gowin_pack 生成的裸位流缺少 Gowin Programmer 所需的 `//` 注释头,
-  烧录会报 "different id-code"; src/awg/blinky.py 构建后会自动补上该头

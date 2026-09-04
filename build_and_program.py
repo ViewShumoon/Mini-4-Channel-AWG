@@ -17,6 +17,9 @@ ROOT = Path(__file__).resolve().parent
 # Gowin IDE 安装目录与 oss-cad-suite 工具链目录 (可用环境变量覆盖)
 GOWINIDE = os.environ.get("GOWINIDE", r"D:\Applications\Gowin\Gowin_V1.9.12.03_x64")
 OSS_BIN = Path(os.environ.get("OSS_CAD_SUITE_BIN", r"D:\Applications\oss-cad-suite\bin"))
+# oss-cad-suite 的 exe 依赖的 DLL (libstdc++-6/libwinpthread-1 等) 全部位于 bin 的
+# 兄弟目录 lib; 必须一并加入 PATH, 否则工具一启动即报 0xC0000135 (STATUS_DLL_NOT_FOUND)。
+OSS_LIB = OSS_BIN.parent / "lib"
 
 PROGRAMMER = Path(GOWINIDE) / "Programmer" / "bin" / "programmer_cli.exe"
 
@@ -51,7 +54,7 @@ def main() -> int:
                   file=sys.stderr)
             return 1
         env = os.environ.copy()
-        env["PATH"] = f"{OSS_BIN};" + env.get("PATH", "")
+        env["PATH"] = f"{OSS_BIN};{OSS_LIB};" + env.get("PATH", "")
         env.update({k: str(v) for k, v in TOOLCHAIN.items()})
         cmd = [sys.executable, str(ROOT / "src" / "awg" / f"{args.design}.py")]
         print(">>>", " ".join(cmd))

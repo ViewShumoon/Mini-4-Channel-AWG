@@ -6,6 +6,10 @@
 - DAC 输出复用: 4 路 12/16-bit 波形数据输出, 可由外部 DAC Driver 采样
 
 数据通路支持 12-bit 和 16-bit 两种模式。
+
+时钟域: 全部逻辑运行在平台 ``sync`` 域上, 即时钟资源 ``clk27`` 的 27 MHz
+(本工程不引入 PLL)。ESP32 侧换算 phase_inc 必须使用同一常量
+``awg_platform.F_CLK_DDS = 27_000_000``, 否则输出频率整体偏移。
 """
 
 from amaranth import *
@@ -26,7 +30,8 @@ class DdsTop(Elaboratable):
         self.num_channels = 4
         
         # ---- 全局控制接口 ----
-        self.clk_dds      = Signal()      # DDS 工作时钟 (50MHz)
+        # DDS 工作时钟由平台 clk27 (27 MHz) 经 sync 域直接驱动, 顶层没有独立的
+        # 时钟端口; 原先声明后从未连接的 clk_dds 已移除 (清单 I2)。
         
         # ---- SPI Slave 写入接口 (来自 ESP32-C3) ----
         # 单写端口多通道共享: 通过 addr 选择目标通道 + 目标通道内的 RAM 地址
